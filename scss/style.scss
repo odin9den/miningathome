@@ -6,9 +6,6 @@ body {
   font-family: "Philosopher", sans-serif;
   font-size: 20px;
   color: #fff;
-  margin: 0;
-  line-height: 1.2;
-  width: 100%;
   min-width: 320px;
   overflow-x: hidden;
 }
@@ -19,7 +16,8 @@ body {
   box-sizing: border-box;
 }
 .container {
-  max-width: 1400px;
+  max-width: 1390px;
+  padding: 0 5px;
   margin: 0 auto;
 }
 
@@ -29,8 +27,6 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  flex-direction: column;
-  width: 100%;
   height: 100vh;
 }
 .intro__inner {
@@ -39,14 +35,12 @@ body {
   justify-content: center;
   height: 100vh;
 }
-.title__inner {
+.intro__title-wrapper {
   text-align: center;
   display: flex;
   flex-direction: column;
-  line-height: 1.2;
-  color: #fff;
 }
-.title {
+.intro__title {
   font-weight: 300;
   font-size: 85px;
   text-transform: uppercase;
@@ -55,7 +49,7 @@ body {
   position: relative;
 }
 
-.title-underline:after {
+.intro__title-underline:after {
   content: "";
   display: block;
   width: 11%;
@@ -66,7 +60,7 @@ body {
   left: 44.5%;
 }
 
-.subtitle {
+.intro__subtitle {
   font-weight: 600;
   position: relative;
 }
@@ -74,7 +68,6 @@ body {
 /* header
   ========================*/
 .header {
-  background-size: cover;
   top: 0;
   left: 0;
   right: 0;
@@ -87,19 +80,18 @@ body {
 /* logo 
   =========================*/
 .header__inner {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 35px 142px;
 }
-.logo img {
+.header__logo img {
   margin-top: -50px;
   width: 170px;
 }
 
 /* navigation
   =========================*/
-.nav__inner {
+.header__nav-inner {
   display: flex;
   font-size: 14px;
   font-weight: bold;
@@ -132,13 +124,10 @@ body {
   background: rgba($color: #2c2b29, $alpha: 0.95);
   padding: 10px 15px;
   transition: opacity 0.2s linear;
-  .logo {
-    img {
-      display: none;
-    }
+  .header__logo-img {
+    display: none;
   }
-  .navigation {
-    width: 100%;
+  .header__nav {
     display: flex;
     justify-content: space-evenly;
   }
@@ -146,7 +135,7 @@ body {
 .header__inner.fixed .burger {
   display: none;
 }
-.nav__link {
+.header__nav-link {
   text-decoration: none;
   color: #fff;
   position: relative;
@@ -154,11 +143,11 @@ body {
   transition: color 0.2s linear;
 }
 
-.nav__link:hover {
+.header__nav-link:hover {
   color: #c59966;
 }
 
-.nav__link:after {
+.header__nav-link:after {
   content: "";
   display: block;
   border: 1px solid #fff;
@@ -172,7 +161,7 @@ body {
   transition: opacity 0.2s linear;
 }
 
-.nav__link:hover:after {
+.header__nav-link:hover:after {
   display: block;
   opacity: 1;
 }
@@ -214,31 +203,25 @@ body {
 /* about
   ============================== */
 
-.about {
-  width: 100%;
-  height: auto;
-}
-
 .about__inner {
   display: flex;
   flex-direction: column;
 }
 
-.heading {
+.section-header {
   color: #1a1918;
   text-align: center;
-  width: 100%;
   max-width: 1230px;
   margin: 0 auto;
 }
 
-.mainhead {
+.section-header__main {
   font-size: 80px;
   text-transform: uppercase;
   margin: 100px 0 30px;
 }
 
-.subhead {
+.section-header__sub {
   font-weight: 600;
   position: relative;
 }
@@ -246,18 +229,16 @@ body {
 /* goals
   ============================== */
 
-.goals p {
-  width: 100%;
-  max-width: 1230px;
+.about__goals p {
   margin: 0 auto;
   font-size: 15px;
   color: #000000;
-  line-height: 1.5;
+  line-height: 1.5em;
   position: relative;
   padding-top: 10px;
 }
 
-.goals img {
+.about__goals img {
   float: left;
   width: 70px;
   margin-right: 35px;
@@ -266,34 +247,30 @@ body {
   padding: 20px;
 }
 
-.goals span {
+.about__goals span {
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
   color: #c59a6d;
 }
 
-.begin {
+.about__goals-1 {
   width: 35%;
-  height: auto;
   padding: 30px;
   border: 1px solid #bdbdbd;
-
   margin: 50px 0 50px 100px;
 }
 
-.award {
+.about__goals-2 {
   width: 35%;
-  height: auto;
   padding: 30px;
   border: 1px solid #bdbdbd;
   margin-left: auto;
   margin-right: 70px;
 }
 
-.office {
+.about__goals-3 {
   width: 35%;
-  height: auto;
   padding: 30px;
   border: 1px solid #bdbdbd;
   margin: 50px 0 0 100px;
@@ -301,10 +278,10 @@ body {
 
 /* timeline
   ============================== */
-.timeline {
+.about__timeline {
   position: absolute;
 }
-.timeline__inner {
+.about__timeline-wrapper {
   width: 1px;
   height: 680px;
   background-color: #bdbdbd;
@@ -312,9 +289,9 @@ body {
   left: 700px;
   position: absolute;
 }
-.timeline__inner-dots--1,
-.timeline__inner-dots--2,
-.timeline__inner-dots--3 {
+.about__timeline-dots--1,
+.about__timeline-dots--2,
+.about__timeline-dots--3 {
   width: 20px;
   height: 20px;
   background-color: #c59966;
@@ -327,28 +304,28 @@ body {
   display: block;
   left: -9px;
 }
-.timeline__inner-dots--1 span {
+.about__timeline-dots--1 span {
   padding-left: 35px;
   margin-top: -5px;
 }
-.timeline__inner-dots--2 {
+.about__timeline-dots--2 {
   margin-top: 240px;
 }
-.timeline__inner-dots--2 span {
+.about__timeline-dots--2 span {
   margin-left: -105px;
   margin-top: -5px;
 }
-.timeline__inner-dots--3 {
+.about__timeline-dots--3 {
   margin-top: 520px;
 }
-.timeline__inner-dots--3 span {
+.about__timeline-dots--3 span {
   padding-left: 35px;
   margin-top: -5px;
 }
 /* learnbtn
   ============================== */
 
-.loadbtn {
+.about__loadbtn {
   width: 170px;
   height: auto;
   text-decoration: none;
@@ -363,7 +340,7 @@ body {
   position: relative;
 }
 
-.loadbtn:after {
+.about__loadbtn:after {
   content: "Дізнатися більше";
   padding: 10px 15px 10px;
   display: block;
@@ -379,7 +356,7 @@ body {
   transition: opacity 0.2s linear;
 }
 
-.loadbtn:hover:after {
+.about__loadbtn:hover:after {
   display: block;
   opacity: 1;
 }
@@ -399,31 +376,23 @@ body {
 /* team
   =============================*/
 
-.team {
-  width: 100%;
-  height: auto;
-}
-
 .team__inner {
-  width: 100%;
-  margin: 0 auto;
   padding: 100px 0 0;
 }
 
-.members {
-  width: 100%;
+.team__members {
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
 }
 
-.member {
+.team__member {
   width: 20%;
   margin: 30px 15px 100px;
   text-align: center;
 }
 
-.portret {
+.team__photo {
   border: 1px solid #cccccc;
   padding: 10px;
   height: 375px;
@@ -434,7 +403,7 @@ body {
   font-weight: 400;
 }
 
-.member .member__person {
+.team__member .team__member-person {
   font-size: 16px;
   color: #c59a6d;
   font-size: 16px;
@@ -445,26 +414,26 @@ body {
 
 /* icons
   =============================*/
-.icons {
+.team__social-icons {
   width: 100%;
   max-width: 800px;
   margin: 15px 0 0;
 }
 
-.icons img {
+.team__social-icons img {
   width: 23px;
   height: 23px;
   margin-right: 2px;
   padding: 5px;
 }
 
-.icon {
+.team__social-icons__item {
   position: relative;
   width: 23px;
   height: 23px;
 }
 
-.icon:after {
+.team__social-icons__item:after {
   content: "";
   display: block;
   border: 1px solid #cbcbcb;
@@ -478,7 +447,7 @@ body {
   transition: opacity 0.2s linear;
 }
 
-.icon:hover:after {
+.team__social-icons__item:hover:after {
   display: block;
   opacity: 1;
 }
@@ -963,8 +932,8 @@ body {
   margin: 0 auto;
 }
 
-.facts__inner .mainhead,
-.facts__inner .subhead {
+.facts__inner .section-header__main,
+.facts__inner .section-header__sub {
   color: #fff;
 }
 
@@ -1064,6 +1033,7 @@ body {
   padding: 15px 15px;
   background-color: #f6f6f6;
   border: 1px solid #cccccc;
+  resize: none;
 }
 
 .submit__btn input {
@@ -1216,13 +1186,10 @@ body {
   display: none;
   background: none;
   border: 0;
+  height: 30px;
   padding: 9px 2px;
   outline: none;
   z-index: 2;
-}
-
-.burger:hover {
-  color: #c59966;
 }
 
 .burger__item {

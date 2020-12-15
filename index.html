@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,20 +23,21 @@
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
-    <div class="header" id="home">
+
+    <header class="header" id="home">
       <div class="container">
         <div class="header__inner" id="headerjs">
-          <div class="logo"><img src="img/mining-logo.png" /></div>
+          <div class="header__logo"><img class="header__logo-img" src="img/mining-logo.png" /></div>
 
-          <nav class="navigation">
-            <div class="nav__inner">
-              <a class="nav__link" href="#" data-scroll="#home">на головну</a>
-              <a class="nav__link" href="#" data-scroll="#about">про нас</a>
-              <a class="nav__link" href="#" data-scroll="#team">команда</a>
-              <a class="nav__link" href="#" data-scroll="#works">роботи</a>
-              <a class="nav__link" href="#" data-scroll="#services">сервіс</a>
-              <a class="nav__link" href="#" data-scroll="#prices">ціни</a>
-              <a class="nav__link" href="#" data-scroll="#contact">контакти</a>
+          <nav class="header__nav">
+            <div class="header__nav-inner">
+              <a class="header__nav-link" href="#" data-scroll="#home">на головну</a>
+              <a class="header__nav-link" href="#" data-scroll="#about">про нас</a>
+              <a class="header__nav-link" href="#" data-scroll="#team">команда</a>
+              <a class="header__nav-link" href="#" data-scroll="#works">роботи</a>
+              <a class="header__nav-link" href="#" data-scroll="#services">сервіс</a>
+              <a class="header__nav-link" href="#" data-scroll="#prices">ціни</a>
+              <a class="header__nav-link" href="#" data-scroll="#contact">контакти</a>
             </div>
           </nav>
 
@@ -44,51 +45,51 @@
             <span class="burger__item"></span>
           </button>
           <div class="menu" id="menu">
-            <a class="nav__link" href="#" data-scroll="#home">на головну</a>
-            <a class="nav__link" href="#" data-scroll="#about">про нас</a>
-            <a class="nav__link" href="#" data-scroll="#team">команда</a>
-            <a class="nav__link" href="#" data-scroll="#works">роботи</a>
-            <a class="nav__link" href="#" data-scroll="#services">сервіс</a>
-            <a class="nav__link" href="#" data-scroll="#prices">ціни</a>
-            <a class="nav__link" href="#" data-scroll="#contact">контакти</a>
+            <a class="header__nav-link" href="#" data-scroll="#home">на головну</a>
+            <a class="header__nav-link" href="#" data-scroll="#about">про нас</a>
+            <a class="header__nav-link" href="#" data-scroll="#team">команда</a>
+            <a class="header__nav-link" href="#" data-scroll="#works">роботи</a>
+            <a class="header__nav-link" href="#" data-scroll="#services">сервіс</a>
+            <a class="header__nav-link" href="#" data-scroll="#prices">ціни</a>
+            <a class="header__nav-link" href="#" data-scroll="#contact">контакти</a>
           </div>
         </div>
       </div>
-    </div>
+    </header>
 
-    <div
+    <section
       class="intro"
       id="introjs"
       style="background-image: url('img/intro-bg.jpg');"
     >
       <div class="container">
         <div class="intro__inner">
-          <div class="title__inner">
-            <div class="title">
-              <span class="title-underline">Майнінг криптовалюти </span
+          <div class="intro__title-wrapper">
+            <div class="intro__title">
+              <span class="intro__title-underline">Майнінг криптовалюти </span
               ><br />вдома<br />
             </div>
-            <div class="subtitle">інвестуй у майбутє!</div>
+            <div class="intro__subtitle">інвестуй у майбутє!</div>
           </div>
         </div>
         <a class="animate__animated animate__fadeInDown animate__infinite" id="btnjs" href="#about"></a>
       </div>
-    </div>
+    </section>
 
-    <div class="about" id="about">
+    <section class="about" id="about">
       <div class="container">
         <div class="about__inner" id="aboutjs">
-          <div class="heading">
-            <div class="mainhead">Про нас</div>
-            <div class="subhead">
+          <div class="section-header">
+            <div class="section-header__main">Про нас</div>
+            <div class="section-header__sub">
               Наша компанія пропонує готове обладнання під ключ, <br />це зручне
               рішення як для новачків у цій сфері, так і для досвідчених
               майнерів
             </div>
           </div>
 
-          <div class="goals">
-            <div class="begin wow animate__animated animate__fadeInUp" data-wow-offset="300">
+          <div class="about__goals">
+            <div class="about__goals-1 wow animate__animated animate__fadeInUp" data-wow-offset="300">
               <img src="img/beginicon.png" />
               <span>Усвідомлення</span>
               <p>
@@ -99,7 +100,7 @@
               </p>
             </div>
 
-            <div class="award wow animate__animated animate__fadeInUp" data-wow-offset="300">
+            <div class="about__goals-2 wow animate__animated animate__fadeInUp" data-wow-offset="300">
               <img src="img/awardicon.png" />
               <span>Перші результати</span>
               <p>
@@ -110,7 +111,7 @@
                 більше.
               </p>
             </div>
-            <div class="office wow animate__animated animate__fadeInUp" data-wow-offset="300">
+            <div class="about__goals-3 wow animate__animated animate__fadeInUp" data-wow-offset="300">
               <img src="img/officeicon.png" />
               <span>Успіх</span>
               <p>
@@ -121,95 +122,95 @@
               </p>
             </div>
           </div>
-          <div class="timeline">
-            <div class="timeline__inner">
-              <div class="timeline__inner-dots--1"><span>Новачок</span></div>
-              <div class="timeline__inner-dots--2"><span>Любитель</span></div>
-              <div class="timeline__inner-dots--3">
+          <div class="about__timeline">
+            <div class="about__timeline-wrapper">
+              <div class="about__timeline-dots--1"><span>Новачок</span></div>
+              <div class="about__timeline-dots--2"><span>Любитель</span></div>
+              <div class="about__timeline-dots--3">
                 <span>Професіонал</span>
               </div>
             </div>
           </div>
-          <a class="loadbtn" id="loadjs" href="#services">Дізнатися більше</a>
+          <a class="about__loadbtn" id="loadjs" href="#services">Дізнатися більше</a>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="team" id="team">
+    <section class="team" id="team">
       <div class="container">
         <div class="team__inner">
-          <div class="heading">
-            <div class="mainhead">наша команда</div>
-            <div class="subhead">
+          <div class="section-header">
+            <div class="section-header__main">наша команда</div>
+            <div class="section-header__sub">
               Наші професіонали допоможуть вам зібрати вашу першу ферму для
               майнінгу,<br />
               і дадуть вам відповіді на всі ваші запитання
             </div>
           </div>
-          <div class="members">
-            <div class="member wow animate__animated animate__fadeInUp" data-wow-offset="300">
-              <img class="portret" src="img/team-member-1.jpg" />
-              <div class="member__person">
+          <div class="team__members">
+            <div class="team__member wow animate__animated animate__fadeInUp" data-wow-offset="300">
+              <img class="team__photo" src="img/team-member-1.jpg" />
+              <div class="team__member-person">
                 Іван <span class="gray__text">/Менеджер</span>
               </div>
-              <div class="icons">
-                <a class="icon wow animate__animated animate__fadeIn" data-wow-delay=".5s" href="#"><img src="img/facebook.png" /></a>
-                <a class="icon wow animate__animated animate__fadeIn" data-wow-delay=".6s" href="#"><img src="img/tweeter.png" /></a>
-                <a class="icon wow animate__animated animate__fadeIn" data-wow-delay=".7s" href="#"><img src="img/google.png" /></a>
-                <a class="icon wow animate__animated animate__fadeIn" data-wow-delay=".8s" href="#"><img src="img/insta.jpg" /></a>
-                <a class="icon wow animate__animated animate__fadeIn" data-wow-delay=".9s" href="#"><img src="img/pinterest.png" /></a>
+              <div class="team__social-icons">
+                <a class="team__social-icons__item wow animate__animated animate__fadeIn" data-wow-delay=".5s" href="#"><img src="img/facebook.png" /></a>
+                <a class="team__social-icons__item wow animate__animated animate__fadeIn" data-wow-delay=".6s" href="#"><img src="img/tweeter.png" /></a>
+                <a class="team__social-icons__item wow animate__animated animate__fadeIn" data-wow-delay=".7s" href="#"><img src="img/google.png" /></a>
+                <a class="team__social-icons__item wow animate__animated animate__fadeIn" data-wow-delay=".8s" href="#"><img src="img/insta.jpg" /></a>
+                <a class="team__social-icons__item wow animate__animated animate__fadeIn" data-wow-delay=".9s" href="#"><img src="img/pinterest.png" /></a>
               </div>
             </div>
-            <div class="member wow animate__animated animate__fadeInUp" data-wow-offset="300" data-wow-delay=".2s">
-              <img class="portret" src="img/team-member-2.jpg" />
-              <div class="member__person">
+            <div class="team__member wow animate__animated animate__fadeInUp" data-wow-offset="300" data-wow-delay=".2s">
+              <img class="team__photo" src="img/team-member-2.jpg" />
+              <div class="team__member-person">
                 Марія <span class="gray__text">/Менеджер</span>
               </div>
-              <div class="icons">
-                <a class="icon wow animate__animated animate__fadeIn" data-wow-delay="1s" href="#"><img src="img/facebook.png" /></a>
-                <a class="icon wow animate__animated animate__fadeIn" data-wow-delay="1.1s" href="#"><img src="img/tweeter.png" /></a>
-                <a class="icon wow animate__animated animate__fadeIn" data-wow-delay="1.2s" href="#"><img src="img/google.png" /></a>
-                <a class="icon wow animate__animated animate__fadeIn" data-wow-delay="1.3s" href="#"><img src="img/insta.jpg" /></a>
-                <a class="icon wow animate__animated animate__fadeIn" data-wow-delay="1.4s" href="#"><img src="img/pinterest.png" /></a>
+              <div class="team__social-icons">
+                <a class="team__social-icons__item wow animate__animated animate__fadeIn" data-wow-delay="1s" href="#"><img src="img/facebook.png" /></a>
+                <a class="team__social-icons__item wow animate__animated animate__fadeIn" data-wow-delay="1.1s" href="#"><img src="img/tweeter.png" /></a>
+                <a class="team__social-icons__item wow animate__animated animate__fadeIn" data-wow-delay="1.2s" href="#"><img src="img/google.png" /></a>
+                <a class="team__social-icons__item wow animate__animated animate__fadeIn" data-wow-delay="1.3s" href="#"><img src="img/insta.jpg" /></a>
+                <a class="team__social-icons__item wow animate__animated animate__fadeIn" data-wow-delay="1.4s" href="#"><img src="img/pinterest.png" /></a>
               </div>
             </div>
-            <div class="member wow animate__animated animate__fadeInUp" data-wow-offset="300" data-wow-delay=".4s">
-              <img class="portret" src="img/team-member-3.jpg" />
-              <div class="member__person">
+            <div class="team__member wow animate__animated animate__fadeInUp" data-wow-offset="300" data-wow-delay=".4s">
+              <img class="team__photo" src="img/team-member-3.jpg" />
+              <div class="team__member-person">
                 Олеся <span class="gray__text">/Менеджер</span>
               </div>
-              <div class="icons">
-                <a class="icon wow animate__animated animate__fadeIn" data-wow-delay="1.5s" href="#"><img src="img/facebook.png" /></a>
-                <a class="icon wow animate__animated animate__fadeIn" data-wow-delay="1.6s" href="#"><img src="img/tweeter.png" /></a>
-                <a class="icon wow animate__animated animate__fadeIn" data-wow-delay="1.7s" href="#"><img src="img/google.png" /></a>
-                <a class="icon wow animate__animated animate__fadeIn" data-wow-delay="1.8s" href="#"><img src="img/insta.jpg" /></a>
-                <a class="icon wow animate__animated animate__fadeIn" data-wow-delay="1.9s" href="#"><img src="img/pinterest.png" /></a>
+              <div class="team__social-icons">
+                <a class="team__social-icons__item wow animate__animated animate__fadeIn" data-wow-delay="1.5s" href="#"><img src="img/facebook.png" /></a>
+                <a class="team__social-icons__item wow animate__animated animate__fadeIn" data-wow-delay="1.6s" href="#"><img src="img/tweeter.png" /></a>
+                <a class="team__social-icons__item wow animate__animated animate__fadeIn" data-wow-delay="1.7s" href="#"><img src="img/google.png" /></a>
+                <a class="team__social-icons__item wow animate__animated animate__fadeIn" data-wow-delay="1.8s" href="#"><img src="img/insta.jpg" /></a>
+                <a class="team__social-icons__item wow animate__animated animate__fadeIn" data-wow-delay="1.9s" href="#"><img src="img/pinterest.png" /></a>
               </div>
             </div>
-            <div class="member wow animate__animated animate__fadeInUp" data-wow-offset="300" data-wow-delay=".6s">
-              <img class="portret" src="img/team-member-4.jpg" />
-              <div class="member__person">
+            <div class="team__member wow animate__animated animate__fadeInUp" data-wow-offset="300" data-wow-delay=".6s">
+              <img class="team__photo" src="img/team-member-4.jpg" />
+              <div class="team__member-person">
                 Микола <span class="gray__text">/Менеджер</span>
               </div>
-              <div class="icons">
-                <a class="icon wow animate__animated animate__fadeIn" data-wow-delay="2s" href="#"><img src="img/facebook.png" /></a>
-                <a class="icon wow animate__animated animate__fadeIn" data-wow-delay="2.1s" href="#"><img src="img/tweeter.png" /></a>
-                <a class="icon wow animate__animated animate__fadeIn" data-wow-delay="2.2s" href="#"><img src="img/google.png" /></a>
-                <a class="icon wow animate__animated animate__fadeIn" data-wow-delay="2.3s" href="#"><img src="img/insta.jpg" /></a>
-                <a class="icon wow animate__animated animate__fadeIn" data-wow-delay="2.4s" href="#"><img src="img/pinterest.png" /></a>
+              <div class="team__social-icons">
+                <a class="team__social-icons__item wow animate__animated animate__fadeIn" data-wow-delay="2s" href="#"><img src="img/facebook.png" /></a>
+                <a class="team__social-icons__item wow animate__animated animate__fadeIn" data-wow-delay="2.1s" href="#"><img src="img/tweeter.png" /></a>
+                <a class="team__social-icons__item wow animate__animated animate__fadeIn" data-wow-delay="2.2s" href="#"><img src="img/google.png" /></a>
+                <a class="team__social-icons__item wow animate__animated animate__fadeIn" data-wow-delay="2.3s" href="#"><img src="img/insta.jpg" /></a>
+                <a class="team__social-icons__item wow animate__animated animate__fadeIn" data-wow-delay="2.4s" href="#"><img src="img/pinterest.png" /></a>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <div class="works" id="works">
       <div class="container">
         <div class="works__inner">
-          <div class="heading work__head">
-            <div class="mainhead">Конфігурації ферм</div>
-            <div class="subhead">Сучасний ринок криптовалют - це всі нові й ефективні сервіси,<br>
+          <div class="section-header work__head">
+            <div class="section-header__main">Конфігурації ферм</div>
+            <div class="section-header__sub">Сучасний ринок криптовалют - це всі нові й ефективні сервіси,<br>
                які готові вирішувати найскладніші завдання, щоб гідно конкурувати з іншими учасниками ринку</div>
           </div> 
           <div class="work__item">
@@ -306,9 +307,9 @@
     <div class="services" id="services">
       <div class="container">
         <div class="services__inner">
-          <div class="heading">
-            <div class="mainhead">сервіс</div>
-            <div class="subhead">Допоможемо обрати модель, проконсультуємо, покажемо</div>
+          <div class="section-header">
+            <div class="section-header__main">сервіс</div>
+            <div class="section-header__sub">Допоможемо обрати модель, проконсультуємо, покажемо</div>
           </div>
           <div class="services__item">
             <div class="service__inner wow animate__animated animate__fadeInUp" data-wow-offset="300">
@@ -345,9 +346,9 @@
     <div class="prices" id="prices">
       <div class="container">
         <div class="prices__inner">
-          <div class="heading">
-            <div class="mainhead">Ціни</div>
-            <div class="subhead">Вартість оренди місця на наших складах</div>
+          <div class="section-header">
+            <div class="section-header__main">Ціни</div>
+            <div class="section-header__sub">Вартість оренди місця на наших складах</div>
           </div> 
           <div class="prices__item">
             <div class="item wow animate__animated animate__fadeInUp" data-wow-offset="300">
@@ -421,9 +422,9 @@
     <div class="testimonials">
       <div class="container">
         <div class="testimonials__inner">
-          <div class="heading">
-            <div class="mainhead">Відгуки</div>
-            <div class="subhead">Ми працюємо з 2015 року, 
+          <div class="section-header">
+            <div class="section-header__main">Відгуки</div>
+            <div class="section-header__sub">Ми працюємо з 2015 року, 
               цінуємо кожного свого клієнта</div>
           </div>
           <div id="reviewSlider">
@@ -464,9 +465,9 @@
     <div class="facts" style="background-image: url(img/about-bg.jpg);">
       <div class="container">
         <div class="facts__inner">
-          <div class="heading">
-            <div class="mainhead">Цікаві факти</div>
-            <div class="subhead">Якщо підсумувати усі наші консультації в офісі з 
+          <div class="section-header">
+            <div class="section-header__main">Цікаві факти</div>
+            <div class="section-header__sub">Якщо підсумувати усі наші консультації в офісі з 
               потенційними клієнтами, то отримаємо наступні цифри:
             </div>
         </div>

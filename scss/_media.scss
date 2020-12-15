@@ -1,24 +1,24 @@
 /* Media
 =====================*/
 @media (max-width: 1367px) {
-  .timeline {
+  .about__timeline {
     display: none;
   }
-  .begin,
-  .award,
-  .office {
+  .about__goals-1,
+  .about__goals-2,
+  .about__goals-3 {
     width: 50%;
     padding: 20px;
     margin: 50px auto;
   }
-  .member {
+  .team__member {
     width: 32%;
   }
 }
 
 @media (max-width: 1180px) {
   /* navigation */
-  .navigation {
+  .header__nav {
     display: none;
   }
   .header__inner {
@@ -32,11 +32,11 @@
 
   /* goals */
 
-  .goals {
+  .about__goals {
     font-size: 12px;
   }
 
-  .goals span {
+  .about__goals span {
     font-size: 14px;
   }
 
@@ -87,10 +87,10 @@
 }
 
 @media (max-width: 1124px) {
-  .title {
+  .intro__title {
     font-size: 70px;
   }
-  .logo img {
+  .header__logo-img {
     margin-top: 0;
   }
   .facts__inner {
@@ -99,18 +99,18 @@
 }
 
 @media (max-width: 932px) {
-  .title-underline:after {
+  .intro__title-underline:after {
     top: 94%;
   }
-  .mainhead {
+  .section-header__main {
     margin-top: 50px;
   }
-  .goals img {
+  .about__goals img {
     margin-bottom: 50px;
   }
-  .begin,
-  .award,
-  .office {
+  .about__goals-1,
+  .about__goals-2,
+  .about__goals-3 {
     width: 90%;
   }
   .works__inner {
@@ -141,10 +141,10 @@
   .header__inner.fixed .burger {
     display: flex;
   }
-  .header__inner.fixed .navigation {
+  .header__inner.fixed .header__nav {
     display: none;
   }
-  .nav__link {
+  .header__nav-link {
     font-size: 12px;
   }
   .header__inner {
@@ -152,15 +152,15 @@
     padding-right: 20px;
   }
   /* goals */
-  .goals {
+  .about__goals {
     font-size: 10px;
   }
-  .subhead {
+  .section-header__sub {
     padding: 0 25px;
     margin: 50px 0;
   }
 
-  .goals p {
+  .about__goals p {
     font-size: 12px;
   }
   .about__inner:after {
@@ -198,7 +198,7 @@
   }
 
   /* members */
-  .member {
+  .team__member {
     width: 50%;
     margin: 0 15px 50px;
     text-align: center;
@@ -336,10 +336,10 @@
   }
 }
 @media (max-width: 625px) {
-  .title {
+  .intro__title {
     font-size: 60px;
   }
-  .mainhead {
+  .section-header__main {
     font-size: 50px;
   }
   .facts__inner .facts__inner-title {
@@ -358,16 +358,16 @@
 }
 
 @media (max-width: 540px) {
-  .title {
+  .intro__title {
     font-size: 50px;
   }
 
-  .subhead {
+  .section-header__sub {
     font-size: 16px;
   }
   /* goals */
-  .member {
-    width: 90%;
+  .team__member {
+    width: 95%;
   }
   .team__title .team__title-head {
     font-size: 50px;
@@ -435,13 +435,13 @@
   }
 }
 @media (max-width: 460px) {
-  .title {
+  .intro__title {
     font-size: 40px;
   }
-  .goals img {
+  .about__goals img {
     margin-bottom: 20px;
   }
-  .work__head .mainhead {
+  .work__head .section-header__main {
     font-size: 40px;
   }
   .item .prices__text-price {
@@ -466,7 +466,7 @@
   }
 }
 @media (max-width: 380px) {
-  .title {
+  .intro__title {
     font-size: 30px;
   }
   .prices__head .prices__head-title {
