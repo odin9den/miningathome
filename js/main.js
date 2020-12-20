@@ -24,6 +24,7 @@ jQuery(function () {
     let elementOffset = $(elementId).offset().top;
 
     menu.removeClass("show");
+    $(".burger").removeClass("burger-active");
 
     $("html, body").animate(
       {
@@ -41,6 +42,10 @@ jQuery(function () {
     event.preventDefault();
 
     menu.toggleClass("show");
+  });
+
+  $("#navToggle").on("click", function () {
+    $(".burger").toggleClass("burger-active");
   });
 
   $("#btnjs, #loadjs").click(function () {
